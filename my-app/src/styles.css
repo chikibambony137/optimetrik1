@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffddf;
+}
+
+.App {
+    max-width: 800px;
+    margin: auto;
+}
+
+.login-container,
+.patients-list,
+.patient-exams,
+.add-patient-form,
+.add-exam-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+select {
+    color: #777;
+    font-weight: bold;
+    width: 74%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+
+textarea {
+    color: #777;
+  font-weight: bold;
+  width: 70%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #afafaf;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+option {
+    color:#363636;
+}
+
+.btn {
+    width: 30%;
+	height: 42px;
+	margin: 30px auto;
+	justify-content: center;
+	display: block;
+	color: #363636;
+	background: #a6e6a7;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+    font: Ubuntu Sans;
+    box-shadow: 0 5px 15px 0 #7ec0aa;
+transition: 0.5s;
+}
+        
+
+.btn:hover {
+
+    background: #7ec0aa;
+        -webkit-animation: rubberBand 0.6s ease;
+        animation: rubberBand 0.6s ease;
+        transform: translate(0,-3px);
+box-shadow: 0 20px 40px 0 #7ec0aa;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:hover {
+    background-color: #c6c6c6;
+}
+
+.add-patient-form,
+.add-exam-form {
+    margin-top: 20px;
+}
+
+.patient-list {
+    color: #363636;
+    border: 0px solid #afafaf;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    padding: 100px;
+    padding-top: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px #777;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 17px;
+    
+}
+.patient-list2 {
+    width: 100%;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.patient-selected {
+    width: 35%;
+    text-align: center;
+
+    position: fixed;
+    right: 5%;
+    transform: translateY(-50%);
+
+    top: 42%;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px #777;
+    background: rgba(255, 255, 255, 0.6);
+
+    
+}
+.login {
+    width: 40%;
+	height: 42px;
+	margin: 30px auto;
+	justify-content: center;
+	display: block;
+	color: #363636;
+	background: #a6e6a7;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+    font: Ubuntu Sans;
+    box-shadow: 0 5px 15px 0 #7ec0aa;
+    transition: 0.5s;
+}
+.login:hover {
+    
+    background: #7ec0aa;
+
+        transform: translate(0,-3px);
+        box-shadow: 0 20px 40px 0 #7ec0aa;
+        
+}
+
+.LoginForm {
+    color: #363636;
+  border: 0px solid #afafaf;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 10px;
+  text-align: center;
+  padding: 40px;
+  padding-top: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px #777;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.doctors-list {
+    color: #363636;
+  border: 0px solid #afafaf;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 10px;
+  text-align: center;
+  padding: 40px;
+  padding-top: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px #777;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.list {
+
+    width: 30%;
+	height: 40px;
+	margin: 30px auto;
+	justify-content: center;
+    box-shadow: 0 5px 15px 0 #7ec0aa;
+    transition: 0.5s;
+	color: #363636;
+	background: #a6e6a7;
+	font-size: 17px;
+	font-weight: bold;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+    font: Ubuntu Sans;
+    margin-left: 9.6624px;
+}
+.list:hover {
+    
+    background: #7ec0aa;
+        
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 #7ec0aa;
+}
+
+.inspection-add-form {
+
+    width: 35%;
+    text-align: center;
+
+    position: fixed;
+    right: 5%;
+    transform: translateY(-50%);
+
+   top: 37%;
+
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px #777;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.inspection-list{
+    width: 100%;
+    word-wrap: break-word;
+    text-align: left;
+}
+.bth-doctor_list{
+
+    width: 20%;
+	height: 10%;
+	justify-content: left;
+    box-shadow: 0 5px 15px 0 #7ec0aa;
+    transition: 0.5s;
+	color: #363636;
+	background: #a6e6a7;
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 100%;
+	outline: none;
+	border: none;
+	border-radius: 50px;
+	transition: .2s ease-in;
+	cursor: pointer;
+    font: Ubuntu Sans;
+   
+}
+.bth-doctor_list:hover{
+
+    background: #7ec0aa;
+  
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 #7ec0aa;
+}
